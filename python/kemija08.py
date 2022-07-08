@@ -27,6 +27,10 @@ class TestKemija(unittest.TestCase):
         result = 'zelena paprika'
         self.assertEqual(get_decode_sentence(sample), result)
 
+        sample = 'bapas jepe doposapadnapa opovapa kepemipijapa'
+        result = 'bas je dosadna ova kemija'
+        self.assertEqual(get_decode_sentence(sample), result)
+
 
 if __name__ == '__main__':
     print(get_decode_sentence(input()))
